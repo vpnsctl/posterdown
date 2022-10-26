@@ -8,10 +8,10 @@ author:
     affil: 1
 affiliation:
   - num: 1
-    address: Department of Statistics, KAUST
+    address: Statistics Program, KAUST
 column_numbers: 4
-logoright_name: group_logo2.png
-logoleft_name: stat_logo.png
+logoright_name: https&#58;//raw.githubusercontent.com/vpnsctl/posterdown/master/images/group_logo2.png
+logoleft_name: https&#58;//raw.githubusercontent.com/vpnsctl/posterdown/master/images/stat_logo.png
 output: 
   posterdown::posterdown_html:
     self_contained: false
