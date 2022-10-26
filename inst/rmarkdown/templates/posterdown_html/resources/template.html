@@ -58,35 +58,35 @@ text-align: justify;
 font-family: $if(font_family)$$font_family$$else$Palatino$endif$;
 }
 .poster_wrap {
-width: $if(poster_width)$$poster_width$$else$45in$endif$;
-height: $if(poster_height)$$poster_height$$else$38in$endif$;
+width: $if(poster_width)$$poster_width$$else$55in$endif$;
+height: $if(poster_height)$$poster_height$$else$28.5in$endif$;
 padding: 0cm;
 }
 .title_container {
 width: $if(titlebox_borderwidth)$calc(100% - $titlebox_borderwidth$ - $titlebox_borderwidth$)$else$100%$endif$;
 height: $if(titlebox_borderwidth)$calc($if(titlebox_height)$$titlebox_height$$else$15%$endif$ - $titlebox_borderwidth$ - $titlebox_borderwidth$)$else$$if(titlebox_height)$$titlebox_height$$else$15%$endif$$endif$;
 overflow: hidden;
-background-color: $if(primary_colour)$$primary_colour$$else$#0b4545$endif$;
-border: $if(titlebox_borderwidth)$$titlebox_borderwidth$$else$0$endif$ solid $if(titlebox_bordercol)$$titlebox_bordercol$$else$$if(primary_colour)$$primary_colour$$else$#0b4545$endif$
+background-color: $if(primary_colour)$$primary_colour$$else$#EDE3FF$endif$;
+border: $if(titlebox_borderwidth)$$titlebox_borderwidth$$else$0$endif$ solid $if(titlebox_bordercol)$$titlebox_bordercol$$else$$if(primary_colour)$$primary_colour$$else$#4B0082$endif$
 $endif$;
 }
 .logo_left {
 float: left;
 width: 10%;
 height: 100%;
-background-color: $if(primary_colour)$$primary_colour$$else$#0b4545$endif$;
+background-color: $if(primary_colour)$$primary_colour$$else$#EDE3FF$endif$;
 display: flex;
-align-items: center;
 justify-content: center;
+transform: scale(0.8,0.8);
 }
 .logo_right {
 float: right;
 width: 10%;
 height: 100%;
-background-color: $if(primary_colour)$$primary_colour$$else$#0b4545$endif$;
+background-color: $if(primary_colour)$$primary_colour$$else$#EDE3FF$endif$;
 display: flex;
-align-items: center;
 justify-content: center;
+transform: translateY(-5pt);
 }
 .poster_title {
 text-align: center;
@@ -190,7 +190,7 @@ margin-bottom: 0;
 }
 .poster_body h1 {
 text-align: center;
-color: $if(sectitle_textcol)$$sectitle_textcol$$else$#FFFFFF$endif$;
+color: $if(sectitle_textcol)$$sectitle_textcol$$else$#000000$endif$;
 font-size: $if(sectitle_textsize)$$sectitle_textsize$$else$65pt$endif$;
 border: $if(sectitle_borderwidth)$$sectitle_borderwidth$$else$2mm$endif$ solid $if(sectitle_bordercol)$$sectitle_bordercol$$else$$if(primary_colour)$$primary_colour$$else$#0b4545$endif$$endif$;
 background-color: $if(sectitle_bgcol)$$sectitle_bgcol$$else$$if(primary_colour)$$primary_colour$$else$#0b4545$endif$$endif$;
@@ -245,7 +245,7 @@ code {
 font-size: 25pt;
 font-family: monospace;
 background-color: $if(secondary_colour)$$secondary_colour$24$else$#00808024$endif$;
-color: $if(secondary_colour)$$secondary_colour$$else$#008080$endif$;
+color: $if(secondary_colour)$$secondary_colour$$else$#1b1b1b$endif$;
 padding: 1.2mm;
 line-height: 1;
 border-radius: 2mm;
@@ -262,7 +262,7 @@ code {
 font-size: 1em;
 font-family: monospace;
 background-color: $if(secondary_colour)$$secondary_colour$24$else$#00808024$endif$;
-color: $if(primary_colour)$$primary_colour$$else$#0b4545$endif$;
+color: $if(code_colour)$$code_colour$$else$#666$endif$;
 padding: 1.2mm;
 border-radius: 2mm;
 }
@@ -336,7 +336,7 @@ $if(affiliation)$<h5 id="affiliation">$for(affiliation)$<sup>$affiliation.num$</
 <!-- Right Logo  -->
 <div class="logo_right">
 $if(logoright_name)$
-<img src=$logoright_name$ style="width: 80%">
+<img src=$logoright_name$>
 $endif$
 </div>
 </div>

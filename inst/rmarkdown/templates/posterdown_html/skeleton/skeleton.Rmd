@@ -1,23 +1,29 @@
 ---
 title: Generate Reproducible & Live HTML and PDF Conference Posters Using RMarkdown
+titlebox_borderwidth: "0.5cm"
 author:
-  - name: Brent Thorne
+  - name: Author 1
     affil: 1
-    orcid: '0000-0002-1099-3857'
-  - name: Another G. Author
-    affil: 2
+  - name: Author 2
+    affil: 1
 affiliation:
   - num: 1
-    address: Department of Earth Science, Brock University
-  - num: 2
-    address: Department of Graphics and Layouts, University of Posters; Canada
-column_numbers: 3
-logoright_name: https&#58;//raw.githubusercontent.com/brentthorne/posterdown/master/images/betterhexlogo.png
-logoleft_name: https&#58;//raw.githubusercontent.com/brentthorne/posterdown/master/images/betterhexlogo.png
+    address: Department of Statistics, KAUST
+column_numbers: 4
+logoright_name: group_logo2.png
+logoleft_name: stat_logo.png
 output: 
   posterdown::posterdown_html:
     self_contained: false
-bibliography: packages.bib
+bibliography: "packages.bib"
+poster_height:	"28.5in"
+poster_width:	"55.0in"
+primary_colour: "#EDE3FF"
+titlebox_bordercol: "#AF9FC9"
+title_textcol: "black"
+author_textcol: "black"
+affiliation_textcol: "black"
+code_colour: #666
 ---
 
 ```{r setup, include=FALSE}

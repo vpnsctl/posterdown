@@ -18,23 +18,3 @@ posterdown_html <- function(...,
 	css = NULL) {
 	pagedown::poster_relaxed(..., css = css, template = template)
 }
-
-#' @description The output format `poster_betterland()` mimics the style of the
-#' BetterPoster movement from twitter.
-#' @rdname posterdown_html
-#' @export
-posterdown_betterland <- function(...,
-                            template = find_resource("posterdown_betterland", "template.html"),
-                            css = NULL) {
-  pagedown::poster_relaxed(..., css = css, template = template)
-}
-
-#' @description The output format `poster_betterport()` mimics the style of the
-#' BetterPoster movement from twitter.
-#' @rdname posterdown_html
-#' @export
-posterdown_betterport <- function(...,
-                                  template = find_resource("posterdown_betterport", "template.html"),
-                                  css = NULL) {
-  pagedown::poster_relaxed(..., css = css, template = template)
-}

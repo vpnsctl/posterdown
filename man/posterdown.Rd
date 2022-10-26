@@ -3,22 +3,11 @@
 \docType{package}
 \name{posterdown}
 \alias{posterdown}
-\alias{posterdown-package}
 \title{posterdown package}
 \description{
 This package creates posters for conferences
 }
 \section{poster_html}{
-
-Creates an R Markdown template for a PDF poster document via HTML
-}
-
-\section{poster_betterland}{
-
-Creates an R Markdown template for a PDF poster document via HTML
-}
-
-\section{poster_betterport}{
 
 Creates an R Markdown template for a PDF poster document via HTML
 }
