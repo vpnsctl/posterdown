@@ -19,10 +19,15 @@ bibliography: "packages.bib"
 poster_height:	"28.5in"
 poster_width:	"55.0in"
 primary_colour: "#EDE3FF"
-titlebox_bordercol: "#AF9FC9"
-title_textcol: "black"
-author_textcol: "black"
-affiliation_textcol: "black"
+secondary_colour: "#4a4798"
+titlebox_bordercol: "#a8a4d0"
+sectitle_textcol: "#4a4798"
+sectitle_bgcol: "#a8a4d0"
+sectitle_bordercol: "#a8a4d0"
+sectitle_boxshape: 0
+title_textcol: "#4a4798"
+author_textcol: "#603913"
+affiliation_textcol: "#4a4798"
 code_colour: #666
 ---
 
